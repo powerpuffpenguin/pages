@@ -17,7 +17,7 @@
 <li><a href="core.SumCombiner.html">SumCombiner</a></li></ul>
 <h1>Class SumCombiner</h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>一個合併器的例子 用於獲取所有插槽的返回值之和</p>
+<div class="tsd-comment tsd-typography"><p>An example of a combiner to get the sum of the return values of all slots</p>
 </div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
@@ -28,7 +28,7 @@
 <ul class="tsd-hierarchy">
 <li><a href="../interfaces/core.Combiner.html" class="tsd-signature-type" data-tsd-kind="Interface">Combiner</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals_combiners.ts#L6">core/signals_combiners.ts:6</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/ba61be5/src/core/signals_combiners.ts#L6">core/signals_combiners.ts:6</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -65,7 +65,7 @@
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>sum_</span><a href="#sum_" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">sum_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals_combiners.ts#L7">core/signals_combiners.ts:7</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/ba61be5/src/core/signals_combiners.ts#L7">core/signals_combiners.ts:7</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="value" class="tsd-anchor"></a>
@@ -73,12 +73,12 @@
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
 <li class="tsd-signature" id="value.value-1"><span class="tsd-signature-symbol">get</span> value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>返回最近一次信號產生，調用完插槽的最終返回值</p>
+<div class="tsd-comment tsd-typography"><p>Returns the final return value of the slot after the last signal is generated</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/core.Combiner.html">Combiner</a>.<a href="../interfaces/core.Combiner.html#value">value</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals_combiners.ts#L8">core/signals_combiners.ts:8</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/ba61be5/src/core/signals_combiners.ts#L8">core/signals_combiners.ts:8</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="before" class="tsd-anchor"></a>
@@ -89,12 +89,14 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of Combiner.before</p>
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals_combiners.ts#L11">core/signals_combiners.ts:11</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/ba61be5/src/core/signals_combiners.ts#L11">core/signals_combiners.ts:11</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="invoke" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>invoke</span><a href="#invoke" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="invoke.invoke-1">invoke<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, iterator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.Slot.html" class="tsd-signature-type" data-tsd-kind="Interface">Slot</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#invoke.invoke-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Execute the combiner</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
@@ -105,7 +107,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/core.Combiner.html">Combiner</a>.<a href="../interfaces/core.Combiner.html#invoke">invoke</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals_combiners.ts#L14">core/signals_combiners.ts:14</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/ba61be5/src/core/signals_combiners.ts#L14">core/signals_combiners.ts:14</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
