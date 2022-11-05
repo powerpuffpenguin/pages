@@ -1,3 +1,1 @@
-# md
-
-[easyts](easyts/index.html)
+[pages](https://powerpuffpenguin.github.io/)
