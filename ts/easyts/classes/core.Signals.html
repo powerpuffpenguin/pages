@@ -17,7 +17,7 @@
 <li><a href="core.Signals.html">Signals</a></li></ul>
 <h1>Class Signals&lt;T, TR&gt;</h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>Signals/Slots ,可以將多個 Slots 與 Signals 關聯，當 Signals 產生信號時 Slots 會被依次調用</p>
+<div class="tsd-comment tsd-typography"><p>Signals/Slots, you can associate multiple Slots with Signals, when Signals generate signals, Slots will be called in turn</p>
 </div></section> 
 <section class="tsd-panel tsd-type-parameters">
 <h4>Type Parameters</h4>
@@ -31,7 +31,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">Signals</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L22">core/signals.ts:22</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L32">src/core/signals.ts:32</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -58,7 +58,6 @@
 <h3 class="tsd-index-heading">Methods</h3>
 <div class="tsd-index-list"><a href="core.Signals.html#connect" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>connect</span></a>
 <a href="core.Signals.html#connectSlot" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>connect<wbr/>Slot</span></a>
-<a href="core.Signals.html#disconnectConnection" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>disconnect<wbr/>Connection</span></a>
 <a href="core.Signals.html#disconnectSlot" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>disconnect<wbr/>Slot</span></a>
 <a href="core.Signals.html#disconnectTag" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>disconnect<wbr/>Tag</span></a>
 <a href="core.Signals.html#reset" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>reset</span></a>
@@ -85,19 +84,21 @@
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> combiner: <a href="../interfaces/core.Combiner.html" class="tsd-signature-type" data-tsd-kind="Interface">Combiner</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="core.Signals.html" class="tsd-signature-type" data-tsd-kind="Class">Signals</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L24">core/signals.ts:24</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L37">src/core/signals.ts:37</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="combiner" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>combiner</span><a href="#combiner" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">combiner<span class="tsd-signature-symbol">?:</span> <a href="../interfaces/core.Combiner.html" class="tsd-signature-type" data-tsd-kind="Interface">Combiner</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L24">core/signals.ts:24</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L37">src/core/signals.ts:37</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="cons_" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>cons_</span><a href="#cons_" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">cons_<span class="tsd-signature-symbol">:</span> <a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
+<div class="tsd-signature">cons_<span class="tsd-signature-symbol">:</span> <a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
+<div class="tsd-comment tsd-typography"><p>Connected Signals/Slots</p>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L23">core/signals.ts:23</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L36">src/core/signals.ts:36</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="conns" class="tsd-anchor"></a>
@@ -105,49 +106,51 @@
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
 <li class="tsd-signature" id="conns.conns-1"><span class="tsd-signature-symbol">get</span> conns<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>返回一個迭代器 用於遍歷 所有 連接</p>
+<div class="tsd-comment tsd-typography"><p>Returns an iterator to iterate over all connections</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L112">core/signals.ts:112</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L128">src/core/signals.ts:128</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="isEmpty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Empty</span><a href="#isEmpty" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
 <li class="tsd-signature" id="isEmpty.isEmpty-1"><span class="tsd-signature-symbol">get</span> isEmpty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>返回是否沒有插槽連接</p>
+<div class="tsd-comment tsd-typography"><p>if there is no connections return it rue</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L37">core/signals.ts:37</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L53">src/core/signals.ts:53</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="length" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>length</span><a href="#length" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
 <li class="tsd-signature" id="length.length-1"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>返回連接數量</p>
+<div class="tsd-comment tsd-typography"><p>Returns the number of connections</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L31">core/signals.ts:31</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L47">src/core/signals.ts:47</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="slots" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>slots</span><a href="#slots" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
 <li class="tsd-signature" id="slots.slots-1"><span class="tsd-signature-symbol">get</span> slots<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.Slot.html" class="tsd-signature-type" data-tsd-kind="Interface">Slot</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>返回一個迭代器 用於遍歷 所有 插槽</p>
+<div class="tsd-comment tsd-typography"><p>Returns an iterator to iterate over all slots</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.Slot.html" class="tsd-signature-type" data-tsd-kind="Interface">Slot</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L91">core/signals.ts:91</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L107">src/core/signals.ts:107</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="value" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>value</span><a href="#value" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
 <li class="tsd-signature" id="value.value-1"><span class="tsd-signature-symbol">get</span> value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>If there is a combiner, return the latest value of the combiner</p>
+</div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L25">core/signals.ts:25</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L41">src/core/signals.ts:41</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="connect" class="tsd-anchor"></a>
@@ -155,7 +158,7 @@
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="connect.connect-1">connect<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.Slot.html" class="tsd-signature-type" data-tsd-kind="Interface">Slot</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><a href="#connect.connect-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>連接 Signals/Slots</p>
+<div class="tsd-comment tsd-typography"><p>connect Slots to Signals</p>
 
 <h3>Returns</h3></div>
 <div class="tsd-parameters">
@@ -165,17 +168,17 @@
 <h5>slot: <a href="../interfaces/core.Slot.html" class="tsd-signature-type" data-tsd-kind="Interface">Slot</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h5></li>
 <li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> tag: <span class="tsd-signature-type">any</span></h5>
-<div class="tsd-comment tsd-typography"><p>自定義的分組標籤</p>
+<div class="tsd-comment tsd-typography"><p>Slots group tag name</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L46">core/signals.ts:46</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L62">src/core/signals.ts:62</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="connectSlot" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>connect<wbr/>Slot</span><a href="#connectSlot" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="connectSlot.connectSlot-1">connect<wbr/>Slot<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../types/core.SlotCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">SlotCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><a href="#connectSlot.connectSlot-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>連接 Signals/Slots</p>
+<div class="tsd-comment tsd-typography"><p>connect Signals/Slots</p>
 
 <h3>Returns</h3></div>
 <div class="tsd-parameters">
@@ -185,30 +188,17 @@
 <h5>slot: <a href="../types/core.SlotCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">SlotCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h5></li>
 <li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> tag: <span class="tsd-signature-type">any</span></h5>
-<div class="tsd-comment tsd-typography"><p>自定義的分組標籤</p>
+<div class="tsd-comment tsd-typography"><p>Slots group tag name</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L57">core/signals.ts:57</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="disconnectConnection" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>disconnect<wbr/>Connection</span><a href="#disconnectConnection" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="disconnectConnection.disconnectConnection-1">disconnect<wbr/>Connection<span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#disconnectConnection.disconnectConnection-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5>c: <a href="core.Connection.html" class="tsd-signature-type" data-tsd-kind="Class">Connection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L158">core/signals.ts:158</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L73">src/core/signals.ts:73</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="disconnectSlot" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>disconnect<wbr/>Slot</span><a href="#disconnectSlot" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="disconnectSlot.disconnectSlot-1">disconnect<wbr/>Slot<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.Slot.html" class="tsd-signature-type" data-tsd-kind="Interface">Slot</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#disconnectSlot.disconnectSlot-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>斷開 slot 的所有連接</p>
+<div class="tsd-comment tsd-typography"><p>Disconnect all connections from slot to this signals</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -217,13 +207,13 @@
 <h5>slot: <a href="../interfaces/core.Slot.html" class="tsd-signature-type" data-tsd-kind="Interface">Slot</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L134">core/signals.ts:134</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L150">src/core/signals.ts:150</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="disconnectTag" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>disconnect<wbr/>Tag</span><a href="#disconnectTag" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="disconnectTag.disconnectTag-1">disconnect<wbr/>Tag<span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#disconnectTag.disconnectTag-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>斷開所有 tag 的連接</p>
+<div class="tsd-comment tsd-typography"><p>Disconnect all tags</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -232,38 +222,38 @@
 <h5>tag: <span class="tsd-signature-type">any</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L148">core/signals.ts:148</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L164">src/core/signals.ts:164</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="reset" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>reset</span><a href="#reset" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="reset.reset-1">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#reset.reset-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>刪除所有插槽</p>
+<div class="tsd-comment tsd-typography"><p>delete all slots</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L170">core/signals.ts:170</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L189">src/core/signals.ts:189</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="signal" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>signal</span><a href="#signal" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="signal.signal-1">signal<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span>, combiner<span class="tsd-signature-symbol">?: </span><a href="../interfaces/core.Combiner.html" class="tsd-signature-type" data-tsd-kind="Interface">Combiner</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#signal.signal-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>產生一個信號以調用所有的 Slot</p>
+<div class="tsd-comment tsd-typography"><p>Generate a signal to call all Slots</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5>val: <span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span></h5>
-<div class="tsd-comment tsd-typography"><p>傳遞給插槽的參數</p>
+<div class="tsd-comment tsd-typography"><p>Parameters passed to the slot</p>
 </div></li>
 <li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> combiner: <a href="../interfaces/core.Combiner.html" class="tsd-signature-type" data-tsd-kind="Interface">Combiner</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type" data-tsd-kind="Type parameter">TR</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>一個臨時的 合併器</p>
+<div class="tsd-comment tsd-typography"><p>a temporary combiner</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/a1e9a44/src/core/signals.ts#L67">core/signals.ts:67</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/7295080/src/core/signals.ts#L83">src/core/signals.ts:83</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -301,7 +291,6 @@
 <li class="tsd-kind-accessor tsd-parent-kind-class"><a href="core.Signals.html#value" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>value</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="core.Signals.html#connect" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>connect</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="core.Signals.html#connectSlot" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>connect<wbr/>Slot</a></li>
-<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.Signals.html#disconnectConnection" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>disconnect<wbr/>Connection</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="core.Signals.html#disconnectSlot" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>disconnect<wbr/>Slot</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="core.Signals.html#disconnectTag" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>disconnect<wbr/>Tag</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="core.Signals.html#reset" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>reset</a></li>
