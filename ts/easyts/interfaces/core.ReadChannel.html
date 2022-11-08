@@ -35,7 +35,7 @@
 <ul class="tsd-hierarchy">
 <li><a href="../classes/core.Chan.html" class="tsd-signature-type" data-tsd-kind="Class">Chan</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core/channel.ts#L26">src/core/channel.ts:26</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L27">src/core/channel.ts:27</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -53,6 +53,7 @@
 <a href="core.ReadChannel.html#read" class="tsd-index-link tsd-kind-method tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>read</span></a>
 <a href="core.ReadChannel.html#readCase" class="tsd-index-link tsd-kind-method tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>read<wbr/>Case</span></a>
 <a href="core.ReadChannel.html#tryRead" class="tsd-index-link tsd-kind-method tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>try<wbr/>Read</span></a>
+<a href="core.ReadChannel.html#wait" class="tsd-index-link tsd-kind-method tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>wait</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
@@ -62,21 +63,21 @@
 <div class="tsd-comment tsd-typography"><p>Returns how much data the channel has buffered</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core/channel.ts#L51">src/core/channel.ts:51</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L52">src/core/channel.ts:52</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="isClosed" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>is<wbr/>Closed</span><a href="#isClosed" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">is<wbr/>Closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 <div class="tsd-comment tsd-typography"><p>Returns whether the channel is closed</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core/channel.ts#L38">src/core/channel.ts:38</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L39">src/core/channel.ts:39</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="length" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>length</span><a href="#length" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Returns the channel buffer size</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core/channel.ts#L47">src/core/channel.ts:47</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L48">src/core/channel.ts:48</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface"><a id="_asyncIterator_" class="tsd-anchor"></a>
@@ -88,7 +89,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AsyncGenerator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core/channel.ts#L56">src/core/channel.ts:56</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L57">src/core/channel.ts:57</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface"><a id="read" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>read</span><a href="#read" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -98,7 +99,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core/channel.ts#L30">src/core/channel.ts:30</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L31">src/core/channel.ts:31</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface"><a id="readCase" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>read<wbr/>Case</span><a href="#readCase" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -108,7 +109,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <a href="../classes/core.Case.html" class="tsd-signature-type" data-tsd-kind="Class">Case</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core/channel.ts#L43">src/core/channel.ts:43</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L44">src/core/channel.ts:44</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface"><a id="tryRead" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>try<wbr/>Read</span><a href="#tryRead" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -118,7 +119,17 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core/channel.ts#L34">src/core/channel.ts:34</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L35">src/core/channel.ts:35</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface"><a id="wait" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>wait</span><a href="#wait" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+<li class="tsd-signature tsd-anchor-link" id="wait.wait-1">wait<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#wait.wait-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Wait for chan to close, no data will be read from chan</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core/channel.ts#L62">src/core/channel.ts:62</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -141,7 +152,8 @@
 <li class="current"><a href="../modules.html">@king011/easyts</a>
 <ul>
 <li class="tsd-kind-module"><a href="../modules/container.html">container</a></li>
-<li class="current tsd-kind-module"><a href="../modules/core.html">core</a></li></ul></li></ul></div></details></nav>
+<li class="current tsd-kind-module"><a href="../modules/core.html">core</a></li>
+<li class="tsd-kind-module"><a href="../modules/sync.html">sync</a></li></ul></li></ul></div></details></nav>
 <nav class="tsd-navigation secondary menu-sticky">
 <ul>
 <li class="current tsd-kind-interface tsd-parent-kind-module"><a href="core.ReadChannel.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg><span>Read<wbr/>Channel</span></a>
@@ -152,7 +164,8 @@
 <li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.ReadChannel.html#_asyncIterator_" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>[async<wbr/>Iterator]</a></li>
 <li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.ReadChannel.html#read" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>read</a></li>
 <li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.ReadChannel.html#readCase" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>read<wbr/>Case</a></li>
-<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.ReadChannel.html#tryRead" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>try<wbr/>Read</a></li></ul></li></ul></nav></div></div>
+<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.ReadChannel.html#tryRead" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>try<wbr/>Read</a></li>
+<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.ReadChannel.html#wait" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>wait</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div><script src="../assets/main.js"></script></body></html>

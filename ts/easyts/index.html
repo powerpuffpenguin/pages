@@ -89,11 +89,11 @@
   <h2>bench</h2>
 </a>
 <p>The main problem of versions before 0.0.6 is to solve the problem of functional integrity. There is a performance bug in chan. When the read and write concurrency is too high, the performance will be seriously degraded. This is because I randomly sequence the concurrent read and write, so that a random The read and write are done, and the sorting takes up a lot of cpu time. In version 0.0.6 I have fixed this issue and will now generate a random array index for the concurrency to pick the completion object and when it is done swap it with the last element of the read/write array and delete it.</p>
-<p>The following is a performance test under a generative consumption model (consumers are fixed at 200)</p>
+<p>The following is a performance test under a generative consumption model (consumers are fixed at 200) <a href="https://github.com/powerpuffpenguin/easyts/blob/main/src/core/channel_bench_test.ts">code</a></p>
 <table>
 <thead>
 <tr>
-<th>easyts</th>
+<th>easyts on node-v14.15.3</th>
 <th>golang 1.18 GOMAXPROCS(12)</th>
 <th>golang 1.18 GOMAXPROCS(1)</th>
 <th>producer count</th>
@@ -165,7 +165,8 @@
 <li class="current selected"><a href="modules.html">@king011/easyts</a>
 <ul>
 <li class="tsd-kind-module"><a href="modules/container.html">container</a></li>
-<li class="tsd-kind-module"><a href="modules/core.html">core</a></li></ul></li></ul></div></details></nav></div></div>
+<li class="tsd-kind-module"><a href="modules/core.html">core</a></li>
+<li class="tsd-kind-module"><a href="modules/sync.html">sync</a></li></ul></li></ul></div></details></nav></div></div>
 <div class="container tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div><script src="assets/main.js"></script></body></html>

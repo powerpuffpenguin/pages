@@ -16,7 +16,7 @@
 <li><a href="core.html">core</a></li></ul>
 <h1>Module core</h1></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/087e118/src/core.ts#L1">src/core.ts:1</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/core.ts#L1">src/core.ts:1</a></li></ul></aside>
 <section class="tsd-panel-group">
 <section class="tsd-panel tsd-typography"></section></section>
 <section class="tsd-panel-group tsd-index-group">
@@ -29,6 +29,8 @@
 <a href="../classes/core.ChannelException.html" class="tsd-index-link tsd-kind-class tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Channel<wbr/>Exception</span></a>
 <a href="../classes/core.Completer.html" class="tsd-index-link tsd-kind-class tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Completer</span></a>
 <a href="../classes/core.Connection.html" class="tsd-index-link tsd-kind-class tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Connection</span></a>
+<a href="../classes/core.Defer.html" class="tsd-index-link tsd-kind-class tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Defer</span></a>
+<a href="../classes/core.DeferException.html" class="tsd-index-link tsd-kind-class tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Defer<wbr/>Exception</span></a>
 <a href="../classes/core.Exception.html" class="tsd-index-link tsd-kind-class tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Exception</span></a>
 <a href="../classes/core.FilterCombiner.html" class="tsd-index-link tsd-kind-class tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Filter<wbr/>Combiner</span></a>
 <a href="../classes/core.Pair.html" class="tsd-index-link tsd-kind-class tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Pair</span></a>
@@ -52,6 +54,7 @@
 <div class="tsd-index-list"><a href="../types/core.CloneCallback.html" class="tsd-index-link tsd-kind-type-alias tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4194304-path"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)" id="icon-4194304-text"></path></svg><span>Clone<wbr/>Callback</span></a>
 <a href="../types/core.CompareCallback.html" class="tsd-index-link tsd-kind-type-alias tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Compare<wbr/>Callback</span></a>
 <a href="../types/core.DeleteCallback.html" class="tsd-index-link tsd-kind-type-alias tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Delete<wbr/>Callback</span></a>
+<a href="../types/core.ExceptionConstructor.html" class="tsd-index-link tsd-kind-type-alias tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Exception<wbr/>Constructor</span></a>
 <a href="../types/core.FilterCallback.html" class="tsd-index-link tsd-kind-type-alias tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Filter<wbr/>Callback</span></a>
 <a href="../types/core.MapCallback.html" class="tsd-index-link tsd-kind-type-alias tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Map<wbr/>Callback</span></a>
 <a href="../types/core.SlotCallback.html" class="tsd-index-link tsd-kind-type-alias tsd-parent-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Slot<wbr/>Callback</span></a>
@@ -96,7 +99,8 @@
 <li class="current"><a href="../modules.html">@king011/easyts</a>
 <ul>
 <li class="tsd-kind-module"><a href="container.html">container</a></li>
-<li class="current selected tsd-kind-module"><a href="core.html">core</a></li></ul></li></ul></div></details></nav>
+<li class="current selected tsd-kind-module"><a href="core.html">core</a></li>
+<li class="tsd-kind-module"><a href="sync.html">sync</a></li></ul></li></ul></div></details></nav>
 <nav class="tsd-navigation secondary menu-sticky">
 <ul>
 <li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.Case.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Case</a></li>
@@ -104,6 +108,8 @@
 <li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.ChannelException.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Channel<wbr/>Exception</a></li>
 <li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.Completer.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Completer</a></li>
 <li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.Connection.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Connection</a></li>
+<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.Defer.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Defer</a></li>
+<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.DeferException.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Defer<wbr/>Exception</a></li>
 <li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.Exception.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Exception</a></li>
 <li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.FilterCombiner.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Filter<wbr/>Combiner</a></li>
 <li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core.Pair.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Pair</a></li>
@@ -121,6 +127,7 @@
 <li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="../types/core.CloneCallback.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Clone<wbr/>Callback</a></li>
 <li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="../types/core.CompareCallback.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Compare<wbr/>Callback</a></li>
 <li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="../types/core.DeleteCallback.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Delete<wbr/>Callback</a></li>
+<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="../types/core.ExceptionConstructor.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Exception<wbr/>Constructor</a></li>
 <li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="../types/core.FilterCallback.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Filter<wbr/>Callback</a></li>
 <li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="../types/core.MapCallback.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Map<wbr/>Callback</a></li>
 <li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="../types/core.SlotCallback.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slot<wbr/>Callback</a></li>
