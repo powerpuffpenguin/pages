@@ -16,16 +16,21 @@
 <li><a href="../modules/sync.html">sync</a></li>
 <li><a href="sync.Locker.html">Locker</a></li></ul>
 <h1>Interface Locker</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>A Locker represents an object that can be locked and unlocked.</p>
+</div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="target">Locker</span></li></ul></section>
+<li><span class="target">Locker</span>
+<ul class="tsd-hierarchy">
+<li><a href="sync.RWLocker.html" class="tsd-signature-type" data-tsd-kind="Interface">RWLocker</a></li></ul></li></ul></section>
 <section class="tsd-panel">
 <h4>Implemented by</h4>
 <ul class="tsd-hierarchy">
 <li><a href="../classes/sync.Mutex.html" class="tsd-signature-type" data-tsd-kind="Class">Mutex</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/sync/mutex.ts#L9">src/sync/mutex.ts:9</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/968adad/src/sync/mutex.ts#L7">src/sync/mutex.ts:7</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -42,11 +47,11 @@
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface"><a id="lock" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>lock</span><a href="#lock" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-<li class="tsd-signature tsd-anchor-link" id="lock.lock-1">lock<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#lock.lock-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="lock.lock-1">lock<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="sync.Locker.html" class="tsd-signature-type" data-tsd-kind="Interface">Locker</a><span class="tsd-signature-symbol">&gt;</span><a href="#lock.lock-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="sync.Locker.html" class="tsd-signature-type" data-tsd-kind="Interface">Locker</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/sync/mutex.ts#L11">src/sync/mutex.ts:11</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/968adad/src/sync/mutex.ts#L9">src/sync/mutex.ts:9</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface"><a id="tryLock" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>try<wbr/>Lock</span><a href="#tryLock" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -54,7 +59,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/sync/mutex.ts#L10">src/sync/mutex.ts:10</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/968adad/src/sync/mutex.ts#L8">src/sync/mutex.ts:8</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface"><a id="unlock" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unlock</span><a href="#unlock" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -62,7 +67,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/c89a950/src/sync/mutex.ts#L12">src/sync/mutex.ts:12</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/powerpuffpenguin/easyts/blob/968adad/src/sync/mutex.ts#L10">src/sync/mutex.ts:10</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -86,7 +91,8 @@
 <ul>
 <li class="tsd-kind-module"><a href="../modules/container.html">container</a></li>
 <li class="tsd-kind-module"><a href="../modules/core.html">core</a></li>
-<li class="current tsd-kind-module"><a href="../modules/sync.html">sync</a></li></ul></li></ul></div></details></nav>
+<li class="current tsd-kind-module"><a href="../modules/sync.html">sync</a></li>
+<li class="tsd-kind-module"><a href="../modules/time.html">time</a></li></ul></li></ul></div></details></nav>
 <nav class="tsd-navigation secondary menu-sticky">
 <ul>
 <li class="current tsd-kind-interface tsd-parent-kind-module"><a href="sync.Locker.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg><span>Locker</span></a>
